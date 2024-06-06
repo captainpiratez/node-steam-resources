@@ -1,6 +1,6 @@
 {
-  "name": "steam-resources",
-  "version": "1.2.2",
+  "name": "steam-resources-v2",
+  "version": "2.2.2",
   "description": "Steam resources for Node.js",
   "scripts": {
     "prepare": "git clone --depth 1 https://github.com/SteamDatabase/Protobufs.git protobufs && git clone --depth 1 https://github.com/SteamRE/SteamKit.git && mv SteamKit/Resources/ProtobufGen protobuf_gen && mv SteamKit/Resources/SteamLanguage steam_language && rm -rf SteamKit"
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/seishun/node-steam-resources"
+    "url": "https://github.com/qWici/node-steam-resources"
   },
   "keywords": [
     "steam"
   ],
-  "author": "Nikolai Vavilov <vvnicholas@gmail.com>",
+  "author": "Ivan Kucher <dev.kucher@gmail.com>",
   "license": "MIT"
 }
