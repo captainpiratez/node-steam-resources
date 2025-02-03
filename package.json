@@ -3,7 +3,7 @@
   "version": "2.2.2",
   "description": "Steam resources for Node.js",
   "scripts": {
-    "prepare": "if [ ! -d \"protobufs\" ]; then git clone --depth 1 https://github.com/SteamDatabase/Protobufs.git protobufs; fi && if [ ! -d \"SteamKit\" ]; then git clone --depth 1 https://github.com/SteamRE/SteamKit.git; fi && mv SteamKit/Resources/ProtobufGen protobuf_gen && mv SteamKit/Resources/SteamLanguage steam_language && rm -rf SteamKit"
+    "prepare": "if [ ! -d \"protobufs\" ]; then git clone --depth 1 https://github.com/SteamDatabase/Protobufs.git protobufs; fi && if [ ! -d \"SteamKit\" ]; then git clone --depth 1 https://github.com/SteamRE/SteamKit.git; fi && if [ ! -d \"protobuf_gen\" ]; then mv SteamKit/Resources/ProtobufGen protobuf_gen; fi && if [ ! -d \"steam_language\" ]; then mv SteamKit/Resources/SteamLanguage steam_language; fi && rm -rf SteamKit"
   },
   "dependencies": {
     "bytebuffer": "^5.0",
